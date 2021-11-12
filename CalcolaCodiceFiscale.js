@@ -10,7 +10,7 @@
  * @param {string} date {YYYY-MM-DD} data 
  * @returns Codice fiscale
  */
-function scalcolaCodiceFiscale(name, surname, city, gender, date) {
+function calcolaCodiceFiscale(name, surname, city, gender, date) {
     // 0 - 2
     let CodiceFiscale = (surname.toUpperCase().replaceAll(/[AIUEO ']/gi, "") + surname.toUpperCase().replaceAll(/[^AIUEO]/gi, "") + "XX").slice(0, 3);
     // 3 - 5
